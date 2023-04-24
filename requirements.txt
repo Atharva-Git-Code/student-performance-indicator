@@ -28,5 +28,5 @@ tenacity
 threadpoolctl
 tzdata
 Werkzeug
-xgboost==1.7.5
-zipp==3.15.0
+xgboost
+zipp
