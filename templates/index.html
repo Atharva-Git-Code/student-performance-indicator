@@ -1,1 +1,162 @@
-<h1>Welcome to the home page</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css"
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Welcome To Student Performance Prediction</title>
+  </head>
+  <body class= "bg-dark">
+      <div class="container">
+          <div class="row">
+              <div class="card mt-50" style="width: 100%; height:100%">
+
+                <div class="card-header">
+                    <div class="col-12" style="text-align: center">
+                        <h2><b> Student Performance Indicator</b></h2>
+                    </div>
+                </div>
+
+                <div class="card-body">
+
+                    <form method="post" accept-charset="utf-8">
+
+                        <div class="col-10 form-control" , style="text-align: center">
+                            <label >Gender</label>
+                            <select class="selectpicker form-control" name="gender" placeholder="Enter you Gender" required>
+                                <option class="placeholder" selected disabled value="">Select your Gender</option>
+                                <option value="male">
+                                    Male
+                                </option>
+                                <option value="female">
+                                    Female
+                                </option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="col-10 form-control" , style="text-align: center">
+                            <label>Race or Ethnicity</label>
+                            <select class="selectpicker form-control" name="race_ethnicity" placeholder="Enter you ethnicity" required>
+                                <option class="placeholder" selected disabled value="">Select Ethnicity</option>
+                                <option value="group A">
+                                    Group A
+                                </option>
+                                <option value="group B">
+                                    Group B
+                                </option>
+                                <option value="group C">
+                                    Group C
+                                </option>
+                                <option value="group D">
+                                    Group D
+                                </option>
+                                <option value="group E">
+                                    Group E
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-10 form-control" , style="text-align: center">
+                            <label >Parental Level of Education</label>
+                            <select class="selectpicker form-control" name="parental_level_of_education"
+                                placeholder="Enter you Parent Education" required>
+                                <option class="placeholder" selected disabled value="">Select Parent Education</option>
+                                <option value="associate's degree">
+                                    associate's degree
+                                </option>
+                                <option value="bachelor's degree">
+                                    bachelor's degree
+                                </option>
+                                <option value="high school">
+                                    high school
+                                </option>
+                                <option value="master's degree">
+                                    master's degree
+                                </option>
+                                <option value="some college">
+                                    some college
+                                </option>
+                                <option value="some high school">
+                                    some high school
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-10 form-control" , style="text-align: center">
+                            <label >Lunch Type</label>
+                            <select class="selectpicker form-control" name="lunch" placeholder="Enter you Lunch" required>
+                                <option class="placeholder" selected disabled value="">Select Lunch Type</option>
+                                <option value="free/reduced">
+                                    free/reduced
+                                </option>
+                                <option value="standard">
+                                    standard
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-10 form-control" , style="text-align: center">
+                            <label>Test preparation Course</label>
+                            <select class="selectpicker form-control" name="test_preparation_course" placeholder="Enter you Course"
+                                required>
+                                <option class="placeholder" selected disabled value="">Select Test_course</option>
+                                <option value="none">
+                                    None
+                                </option>
+                                <option value="completed">
+                                    Completed
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-10 form-control" , style="text-align: center">
+                            <label class="form-label">Writing Score out of 100</label>
+                            <input class="form-control" type="number" name="writing_score"
+                                placeholder="Enter your writing score" min='0' max='100' />
+                        </div>
+
+                        <div class="col-10 form-control" , style="text-align: center">
+                            <label class="form-label">Reading Score out of 100</label>
+                            <input class="form-control" type="number" name="reading_score"
+                                placeholder="Enter your Reading Score" min='0' max='100' />
+                        </div>
+
+                        <div class="col-10 form-control" style="text-align: center">
+                            <input class="btn btn-primary" type="submit" value="Predict your Math Score" required />
+                        </div>
+                    </form>
+                    <br>
+                    <h2>
+                        
+                        Student Math Score is  {{results}} 
+
+                    </h2>
+
+                    </form>
+
+                    <br>
+
+                    
+                </div>
+              </div>
+          </div>>
+      </div>
+    
+            
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
